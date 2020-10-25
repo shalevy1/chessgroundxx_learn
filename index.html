@@ -11,16 +11,27 @@
     </div>
     <script src="/chessground.js"></script>
     <script>
+      // var cg = Chessground.view
       var cg = Chessground(document.getElementById('dirty'), {
         viewOnly: false,
         turnColor: 'white',
         animation: {
           duration: 500
         },
+        movable: {
+          free: false,
+          color: "white",
+          premove: true,
+          dests: {
+            e0: ["e1"]
+          }
+        },
         drawable: {
           enabled: true
-        }
+        },
+        showDests: true
       });
+
     </script>
   </body>
 </html>

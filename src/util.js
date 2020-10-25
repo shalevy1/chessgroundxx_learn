@@ -98,6 +98,7 @@ function partial() {
 }
 
 function isRightButton(e) {
+  // console.log("is right?", e.buttons === 2 || e.button === 2)
   return e.buttons === 2 || e.button === 2;
 }
 

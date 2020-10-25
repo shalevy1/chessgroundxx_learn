@@ -19,8 +19,8 @@ function arrowMargin(current, bounds) {
 }
 
 function pos2px(pos, bounds) {
-  var squareSize = bounds.width / 8;
-  return [(pos[0] - 0.5) * squareSize, (8.5 - pos[1]) * squareSize];
+  // var squareSize = bounds.width / 9;
+  return [(pos[0] + 0.5) * bounds.width / 9, (9.5 - pos[1]) * bounds.height / 10];
 }
 
 function circle(brush, pos, current, bounds) {
@@ -180,7 +180,6 @@ module.exports = function(ctrl) {
   var allShapes = d.shapes.concat(d.autoShapes);
   if (!allShapes.length && !d.current.orig) return;
   var bounds = ctrl.data.bounds();
-  if (bounds.width !== bounds.height) return;
   var usedBrushes = computeUsedBrushes(d, allShapes, d.current);
   var renderedShapes = allShapes.map(renderShape(ctrl.data, false, bounds));
   var renderedCurrent = renderShape(ctrl.data, true, bounds)(d.current, 9999);
