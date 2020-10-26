@@ -114,7 +114,7 @@ function defs(brushes) {
 }
 
 function orient(pos, color) {
-  console.log("Orient", pos, [8 - pos[0], 9 - pos[1]])
+  // console.log("Orient", pos, [8 - pos[0], 9 - pos[1]])
   return color === 'white' ? pos : [8 - pos[0], 9 - pos[1]];
 }
 
