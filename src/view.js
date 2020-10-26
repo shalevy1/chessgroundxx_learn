@@ -56,6 +56,7 @@ function renderSquare(key, classes, ctx) {
 }
 
 function posToTranslate(pos, ctx) {
+  // console.log("posToTranslate", (ctx.asWhite ? pos[0]: 8 - pos[0]) * ctx.bounds.width / 9, (ctx.asWhite ? 9 - pos[1] : pos[1]) * ctx.bounds.height / 10)
   return [
     (ctx.asWhite ? pos[0]: 8 - pos[0]) * ctx.bounds.width / 9, (ctx.asWhite ? 9 - pos[1] : pos[1]) * ctx.bounds.height / 10
   ];

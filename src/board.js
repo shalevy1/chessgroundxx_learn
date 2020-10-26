@@ -306,7 +306,7 @@ function getKeyAtDomPos(data, pos, bounds) {
   if (!bounds && !data.bounds) return;
   bounds = bounds || data.bounds(); // use provided value, or compute it
   var file = Math.floor(9 * ((pos[0] - bounds.left) / bounds.width));
-  file = data.orientation === 'white' ? file : 9 - file;
+  file = data.orientation === 'white' ? file : 8 - file;
   var rank = 9 - Math.floor(10 * ((pos[1] - bounds.top) / bounds.height));
   rank = data.orientation === 'white' ? rank : 9 - rank;
   if (file >= 0 && file < 9 && rank >= 0 && rank < 10) {

@@ -18,6 +18,7 @@ function pos2key(pos) {
 }
 
 function key2pos(pos) {
+  // console.log("run key2pos", pos, [fileNumbers[pos[0]], parseInt(pos[1])])
   return [fileNumbers[pos[0]], parseInt(pos[1])];
 }
 

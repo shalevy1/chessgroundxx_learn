@@ -1,6 +1,6 @@
 {
   "name": "chessgroundxx_learn",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "lichess.org Chess UI",
   "main": "src/main.js",
   "directories": {
