@@ -130,7 +130,7 @@ function renderSquares(ctrl, ctx) {
 
   var dom = [];
   if (d.items) {
-    for (var i = 0; i < 64; i++) {
+    for (var i = 0; i < 90; i++) {
       var key = util.allKeys[i];
       var square = squares[key];
       var item = d.items.render(util.key2pos(key), key);

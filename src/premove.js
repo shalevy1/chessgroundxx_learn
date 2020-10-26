@@ -41,10 +41,6 @@ function advisor(x1, y1, x2, y2) {
 function king(color, rookFiles, canCastle, x1, y1, x2, y2) {
   return (
     diff(x1, x2) < 2 && diff(y1, y2) < 2
-  ) || (
-    canCastle && y1 === y2 && y1 === (color === 'white' ? 1 : 8) && (
-      (x1 === 5 && (x2 === 3 || x2 === 7)) || util.containsX(rookFiles, x2)
-    )
   );
 }
 
@@ -79,6 +75,7 @@ module.exports = function(pieces, key, canCastle) {
       break;
     case 'cannon':
       mobility = cannon;
+      break;
     case 'king':
       mobility = king.bind(null, piece.color, rookFilesOf(pieces, piece.color), canCastle);
       break;
