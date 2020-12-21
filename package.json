@@ -7,7 +7,7 @@
     "example": "examples"
   },
   "dependencies": {
-    "merge": "1.2.0",
+    "merge": "1.2.1",
     "mithril": "github:ornicar/mithril.js#v1.0.1"
   },
   "devDependencies": {
